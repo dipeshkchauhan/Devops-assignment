@@ -62,6 +62,15 @@ if __name__ == '__main__':
     starships_list = get_starship_names()
     films_list = get_film_names()
 
+    # Print starships that appeared in 'Return of the Jedi'
+    print("Ships that appeared in 'Return of the Jedi':")
+    return_of_jedi_ships = starships_in_return_of_jedi(films_list, starships_list)
+    
+    if return_of_jedi_ships:
+        print(return_of_jedi_ships)
+    else:
+        print("No starships found for 'Return of the Jedi'.")
+
     # Print starships with hyperdrive rating >= 1.0
     print("Ships that have a hyperdrive rating >= 1.0:")
     hyperdrive_filtered = filter_starships_by_hyperdrive(starships_list, 1.0)
@@ -71,12 +80,3 @@ if __name__ == '__main__':
     print("Ships that have crews between 3 and 100:")
     crew_filtered = filter_starships_by_crew(starships_list, 3, 100)
     print(crew_filtered)
-
-    # Print starships that appeared in 'Return of the Jedi'
-    print("Ships that appeared in 'Return of the Jedi':")
-    return_of_jedi_ships = starships_in_return_of_jedi(films_list, starships_list)
-    
-    if return_of_jedi_ships:
-        print(return_of_jedi_ships)
-    else:
-        print("No starships found for 'Return of the Jedi'.")
