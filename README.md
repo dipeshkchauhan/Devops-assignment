@@ -1,4 +1,4 @@
-# Devops-assignment
+# DevOps-assignment
 SWAPI-API-Assignment
 URL:https://swapi.dev
 SWAPI - The Star Wars API
